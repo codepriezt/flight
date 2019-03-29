@@ -1,0 +1,277 @@
+html{
+  height:100%
+}
+body{
+  height:100%;
+}
+
+.btn-solid{
+  padding: 10px 20px;
+  border-radius: 0px;
+  color: #fff;
+  background-color: #091476;
+}
+
+.btn-outline{
+  padding: 10px 20px;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #091476;
+  border:2px solid #091476;
+}
+
+.intro{
+  height:100%
+}
+
+.left{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  height : 100%;
+  color : #FFF;
+  float: left;
+  background:url(../img/user.png) no-repeat center;
+  background-size: cover;
+}
+
+.left a{
+  z-index: 1;
+}
+
+.left img{
+  width: 20em;
+}
+
+.right .header{
+  background-color: #fff;
+  float: left;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+
+.right .header img{
+  margin: 0 auto;
+  top: 25px;
+}
+
+.overlay{
+  background-color: rgb(9, 20, 118, 0.6);;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.footer-copy{
+  position: absolute;
+  bottom: 5%;
+  text-align: left;
+  z-index: 1;
+}
+
+.right{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  background-color:#F0F1F7;
+  height : 100%;
+  color : #3d231b;
+}
+
+.right .form-group{
+  position: relative;
+}
+
+.right .form-control{
+  width: 450px;
+  background-color: #fff;
+  height: 60px;
+  border-radius: 0px;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  border:0px;
+  transition: all .4s ease;
+  padding-left: 60px !important;
+}
+
+.right .ico{
+  position: absolute;
+  bottom: 18px;
+  left: 18px;
+}
+
+.right h1{
+  color: #091476;
+}
+
+.right h5,
+.right p{
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #091476;
+  font-size: 1rem
+}
+
+.right .form-control:focus{
+  outline: none;
+  -webkit-box-shadow: none;
+}
+
+.right .btn{
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 600
+}
+
+.right .form-check-label{
+  color: #091476;
+}
+
+.right .fpass{
+  color: #091476;
+  float: right;
+}
+
+.right .btn-outline{
+  margin-left: 10px;
+}
+
+.right .form-control:hover,
+.right .form-control:focus{
+  -webkit-box-shadow: 0px 4px 80px rgba(9, 20, 118, 0.2) !important;
+  box-shadow: 0px 4px 80px rgba(9, 20, 118, 0.2) !important;
+}
+
+.right .footer-copy{
+  bottom: 2%;
+}
+
+.right .footer-copy p{
+  font-size: 13px;
+}
+
+.create-account .btn,
+.forgot-password .btn{
+  margin-top: 0px;
+}
+
+.create-account a,
+.forgot-password a{
+  margin-top: 30px;
+  color: #091476;
+  float: left;
+}
+
+.create-account,
+.forgot-password{
+  display: none;
+}
+
+.btl img{
+  width: 1.1em;
+}
+
+@media (max-width: 1200px) { 
+  .left{
+    height:100%
+  }
+  .right{
+    height:100%
+  }
+}
+
+@media (max-width: 993px) {
+  .intro .right{
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .intro .col-md-5{
+    display: none !important;
+  }
+
+  .right .logo-mobile{
+    margin-bottom: 80px;
+    width: 15em;
+    position: absolute;
+    top: 5%;
+  }
+
+  .intro .col-md-7.right{
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .right .header{
+    display: none !important;
+  }
+
+  .intro .col-md-7.right{
+    width: 100% !important;
+  }
+
+  .create-account .footer-copy,
+  .forgot-password .footer-copy,
+  .login-form .footer-copy{
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .right .form-control{
+    width: 400px;
+  }
+
+  .right p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 767px) {
+  .right .form-control{
+    width: 320px;
+  }
+
+  .right p{
+    font-size: 14px;
+  }
+
+  .right .fpass{
+    font-size: 14px;
+  }
+
+  .right .form-check-label{
+    font-size: 14px;
+  }
+
+  .right .btn{
+    font-size: 12px;
+  }
+}
+
+
+.errors ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+
+}
+
+.success{
+	border:1px solid green;
+	background-color:rgb(147, 206, 147);
+	color:green;
+}
+
+.errors
+.success{
+	text-align:center;
+}

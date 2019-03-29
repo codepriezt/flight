@@ -1,0 +1,243 @@
+/*custom font*/
+
+.navbar-brand img{
+    width: 12em;
+}
+
+.navbar{
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.navbar .btn{
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: #091476;
+    border:0px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background: #E2E5F5;
+    background: -webkit-linear-gradient(to left, #6441A5, #2a0845);
+}
+
+body {
+    font-family: montserrat, arial, verdana;
+    background: transparent;
+}
+
+.navbar-right{
+    float: right;
+}
+
+.x1{
+    -webkit-animation-duration: 1s !important;
+  animation-duration: 1s !important;
+}
+
+.x2{
+    -webkit-animation-duration: 3s !important;
+  animation-duration: 3create-accounts !important;
+}
+
+/*form styles*/
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+#msform fieldset {
+    background: #E2E5F5;
+    border: 0 none;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 4px 100px rgba(47, 62, 202, 0.20);
+    box-shadow: 0px 4px 100px rgba(47, 62, 202, 0.20);
+    padding: 50px 40px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 5%;
+    position: relative;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+/*inputs*/
+#msform .form-control{
+  background-color: #fff;
+  height: 60px;
+  border-radius: 0px;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  border:0px;
+  transition: all .4s ease;
+  padding-left: 60px !important;
+}
+
+#msform .form-control:hover,
+#msform .form-control:focus{
+  -webkit-box-shadow: 0px 4px 80px rgba(9, 20, 118, 0.2) !important;
+  box-shadow: 0px 4px 80px rgba(9, 20, 118, 0.2) !important;
+}
+
+#msform .form-group .ico{
+    position: absolute;
+    bottom: 19px;
+    left: 20px;
+    width: 1.4em;
+}
+
+/*buttons*/
+#msform .action-button {
+    padding: 8px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 0px;
+    color: #fff;
+    background-color: #091476;
+    border:0px;
+    width: 120px;
+    cursor: pointer;
+    border:2.5px solid #091476;
+}
+
+#msform .action-button-previous {
+    padding: 7px 20px;
+    border-radius: 0px;
+    background-color: transparent;
+    color: #091476;
+    border:2px solid #091476;
+    width: 120px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*headings*/
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #091476;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: #091476;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    width: 25%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #DBC313;
+    position: absolute;
+    left: -50%;
+    top: 25px;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+
+#progressbar li.active:before, #progressbar li.active:after {
+    background: #091476;
+    color: #DBC313;
+}
+
+/* Not relevant to this form */
+.dme_link {
+    margin-top: 30px;
+    text-align: center;
+}
+.dme_link a {
+    background: #FFF;
+    font-weight: bold;
+    color: #ee0979;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px;
+}
+
+.dme_link a:hover, .dme_link a:focus {
+    background: #C5C5F1;
+    text-decoration: none;
+}
+
+.error ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+
+}
+
+.success{
+	border:1px solid green;
+	background-color:rgb(147, 206, 147);
+	color:green;
+}
+
+.error
+.success{
+	text-align:center;
+}
+.error{
+    border:1px solide red;
+    background-color:red;
+    color:red;
+}
