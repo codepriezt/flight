@@ -109,9 +109,6 @@ class UserController extends Controller
       return redirect()->to('login')->with('success', 'your token is invalid');
         }
      
-    
-
-
         public function logout(){
             Auth::logout();
             return redirect('/');
